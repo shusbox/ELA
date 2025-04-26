@@ -1,0 +1,61 @@
+#nav {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px #d7dbe5;
+}
+
+.nav-top {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Lexend Deca";
+    font-size: 24px;
+    color: #63825e;
+}
+
+.auth-buttons {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-btn {
+    border: none;
+    color: #63825e;
+    background-color: white;
+}
+
+.login-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background-color: #63825e;
+}
+
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu li {
+    margin: 15px 25px;
+    color: #A6A6A6;
+}
