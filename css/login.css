@@ -1,0 +1,79 @@
+/* 로그인 입력창 */
+#authinput {
+    font-family: "Lexend Deca";
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 380px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #d7dbe5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Lexend Deca";
+    font-size: 20px;
+    color: #63825e;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#auth {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin: 50px 0;
+    height: 3px;
+    border: none;
+    background-color: #ECECEC;
+}
+
+.label {
+    margin: 10px 15px;
+    color: #63825e;
+}
+
+.input {
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: #F4F4F4;
+}
+
+.login {
+    border: none;
+    border-radius: 15px;
+    width: 320px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: "Lexend Deca";
+    background-color: #63825e;
+    box-shadow: 0px 0px 5px #9D9BB1;
+}
+
+.signup {
+    margin: 10px 0px;
+    color: #63825e;
+    font-size: 13px;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+/* 공지 알람 */
