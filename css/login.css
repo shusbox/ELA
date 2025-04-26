@@ -1,6 +1,17 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* 로그인 입력창 */
 #authinput {
     font-family: "Lexend Deca";
+    margin: 10px auto;
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -10,10 +21,6 @@
     height: 500px;
     background-color: white;
     box-shadow: 0px 0px 10px #d7dbe5;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -77,3 +84,17 @@ hr {
 }
 
 /* 공지 알람 */
+.notice {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 45px;
+    color: #63825e;
+    font-weight: 500;
+    font-family: 'Pretendard', sans-serif;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #d7dbe5;
+}
