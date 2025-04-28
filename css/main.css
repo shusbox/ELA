@@ -1,3 +1,15 @@
 .container {
     font-family: 'Pretendard', sans-serif;
 }
+
+.join {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    background-color: #63825e;
+}
