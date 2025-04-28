@@ -7,6 +7,7 @@
 
     <link rel="icon" href="../resource/icon.png"/>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/animation.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
@@ -30,7 +31,7 @@
         </div>
 
         <div id="authinput">
-            <div class="logo">
+            <div id="logo" class="logo">
                 <img src="../resource/home.png" width="40px">
                 <h1> ELA CLUB </h1>
             </div>
@@ -51,11 +52,14 @@
                 <hr>
     
                 <div id="auth">
-                    <button type="submit" class="login"> Login </button>
-                    <a href="test.html" class="signup"> sign up </a>
+                    <button type="submit" id="login" class="login"> Login </button>
+                    <a href="test.html" id="signup" class="signup"> sign up </a>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

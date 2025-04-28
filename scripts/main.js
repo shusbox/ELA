@@ -1,9 +1,9 @@
-function signuphover(id) {
+function txthover(id) {
     const el = document.getElementById(id);
     
     el.addEventListener('mouseenter', () => {
-        el.classList.add('signuphover');
-        el.classList.remove('signuphover-leave');
+        el.classList.add('txthover');
+        el.classList.remove('txthover-leave');
     });
 
     el.addEventListener('mouseleave', () => {
@@ -16,23 +16,24 @@ function signuphover(id) {
     });
 }
 
-function loginhover(id) {
+function btnhover(id) {
     const el = document.getElementById(id);
 
     el.addEventListener('mouseenter', () => {
-        el.classList.add('loginhover');
-        el.classList.remove('loginhover-leave');
+        el.classList.add('btnhover');
+        el.classList.remove('btnhover-leave');
     });
 
     el.addEventListener('mouseleave', () => {
-        el.classList.remove('loginhover');
-        el.classList.add('loginhover-leave');
+        el.classList.remove('btnhover');
+        el.classList.add('btnhover-leave');
 
         setTimeout(() => {
-            el.classList.remove('loginhover-leave');
+            el.classList.remove('btnhover-leave');
         }, 200)
     });
 }
 
-signuphover('signup')
-loginhover('login')
+txthover('signup')
+btnhover('login')
+btnhover('joinbtn')
