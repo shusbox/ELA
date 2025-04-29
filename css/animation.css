@@ -1,10 +1,10 @@
 /* 오버, 언호버 애니메이션 */
-.texthover {
+.txthover {
     color: #53724f;
     transition-duration: 0.2s;
 }
 
-.texthover-leave {
+.txthover-leave {
     color: #63825e;
     transition-duration: 0.2s;
 }
@@ -16,6 +16,18 @@
 
 .btnhover-leave {
     background-color: #63825e;
+    transition-duration: 0.2s;
+}
+
+.btnsizeuphover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #d7dbe5;
+    transition-duration: 0.2s;
+}
+
+.btnsizeuphover-leave {
+    transform: scale(1.0);
+    box-shadow: 0px 0px 0px;
     transition-duration: 0.2s;
 }
 
