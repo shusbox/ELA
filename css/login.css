@@ -20,7 +20,7 @@
     width: 380px;
     height: 500px;
     background-color: white;
-    box-shadow: 0px 0px 10px #d7dbe5;
+    box-shadow: 0px 0px 10px #54547e;
 }
 
 .logo {
@@ -75,6 +75,8 @@ hr {
     box-shadow: 0px 0px 5px #9D9BB1;
 }
 
+.input:focus {outline: 2px solid #63825e;}
+
 .signup {
     margin: 10px 0px;
     color: #63825e;
@@ -96,5 +98,5 @@ hr {
     font-family: 'Pretendard', sans-serif;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #d7dbe5;
+    box-shadow: 0px 0px 10px #54547e;
 }
