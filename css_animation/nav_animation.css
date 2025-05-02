@@ -1,0 +1,44 @@
+/* 텍스트 호버 */
+.txthover {
+    color: #bdbdbd;
+    transition-duration: 0.2s;
+}
+
+.txthover-leave {
+    color: #63825e;
+    transition-duration: 0.2s;
+}
+
+/* 버튼 호버 (색깔) */
+.btnhover {
+    background-color: #53724f;
+    transition-duration: 0.2s;
+}
+
+.btnhover-leave {
+    background-color: #63825e;
+    transition-duration: 0.2s;
+}
+
+/* 네비게이터 밑줄 */
+.nav-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+.nav-menu li.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #63825e;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.nav-menu li.underline:hover::after {
+    width: 170%;
+    left: -30%;
+}
