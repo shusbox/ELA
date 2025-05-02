@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독거노인클럽</title>
 
+    <!-- nav css -->
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css_animation/nav_animation.css">
+
     <link rel="icon" href="./resource/icon.png"/>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css_animation/main_animation.css">
@@ -50,10 +54,16 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById("nav").innerHTML = data;
-                const script = document.createElement('script');
-                script.src = "./scripts/main.js";
-                script.src = "./scripts/nav.js";
-                document.body.appendChild(script);
+
+                // main.js
+                const mainScript = document.createElement('script');
+                mainScript.src = "./scripts/main.js";
+                document.body.appendChild(mainScript);
+
+                // nav.js
+                const navScript = document.createElement('script');
+                navScript.src = "./scripts/nav.js";
+                document.body.appendChild(navScript);
             });
     </script>
 </body>

@@ -1,6 +1,7 @@
 // 버튼 호버 애니메이션 (버튼 크기 키움)
 function btnsizeuphover(id) {
     const el = document.getElementById(id);
+    if (!el) return;
 
     el.addEventListener('mouseenter', () => {
         el.classList.add('btnsizeuphover');
