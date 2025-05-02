@@ -4,6 +4,7 @@
 }
 
 .main {
+    margin: 124px 0px;
     display: flex;
     flex-direction: row;
 }
