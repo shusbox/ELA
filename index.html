@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독거노인클럽</title>
 
-    <link rel="icon" href="/resource/icon.png"/>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css_animation/main_animation.css">
+    <link rel="icon" href="./resource/icon.png"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css_animation/main_animation.css">
 
     <style>
         /* Lexend Deca */ @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
@@ -38,14 +38,14 @@
         
                     <div class="btn">
                         <button id="joinbtn" class="joinbtn" onclick="location.href=''"> 가입하기 -> </button>
-                        <button id="memberbtn" class="memberbtn" onclick="location.href='/html/member.html'"> 멤버 확인하기 </button>
+                        <button id="memberbtn" class="memberbtn" onclick="location.href='./html/member.html'"> 멤버 확인하기 </button>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
     <script>
         fetch("/html/nav.html")
             .then(res => res.text())
@@ -53,7 +53,7 @@
                 document.getElementById("nav").innerHTML = data;
 
                 const script = document.createElement('script');
-                script.src = "/scripts/main.js";
+                script.src = "./scripts/main.js";
                 document.body.appendChild(script);
             });
     </script>

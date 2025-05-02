@@ -8,7 +8,7 @@
 <body>
     <div id="nav"></div>
 
-    <script src="/scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <script>
         fetch("/html/nav.html")
             .then(res => res.text())
@@ -16,7 +16,7 @@
                 document.getElementById("nav").innerHTML = data;
 
                 const script = document.createElement('script');
-                script.src = "/scripts/main.js";
+                script.src = "../scripts/main.js";
                 document.body.appendChild(script);
             });
     </script>
