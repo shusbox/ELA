@@ -108,9 +108,9 @@
             .then(res => res.text())
             .then(data => {
                 document.getElementById("nav").innerHTML = data;
-
                 const script = document.createElement('script');
                 script.src = "../scripts/member.js";
+                script.src = "../scripts/nav.js";
                 document.body.appendChild(script);
             });
     </script>
