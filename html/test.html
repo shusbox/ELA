@@ -3,22 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>test</title>
 </head>
 <body>
-    <div id="nav"></div>
-
-    <script src="../scripts/main.js"></script>
-    <script>
-        fetch("/html/nav.html")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("nav").innerHTML = data;
-
-                const script = document.createElement('script');
-                script.src = "../scripts/main.js";
-                document.body.appendChild(script);
-            });
-    </script>
+    <h1> 하이빵까루 </h1>
 </body>
 </html>
