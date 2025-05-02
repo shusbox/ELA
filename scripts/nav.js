@@ -1,6 +1,7 @@
 // 텍스트 호버 애니메이션 (색깔 어둡게)
 function txthover(id) {
     const el = document.getElementById(id);
+    if (!el) return;
     
     el.addEventListener('mouseenter', () => {
         el.classList.add('txthover');
@@ -20,6 +21,7 @@ function txthover(id) {
 // 버튼 호버 애니메이션 (색깔 어둡게)
 function btnhover(id) {
     const el = document.getElementById(id);
+    if (!el) return;
 
     el.addEventListener('mouseenter', () => {
         el.classList.add('btnhover');
