@@ -1,0 +1,21 @@
+/* 텍스트 호버 */
+.txthover {
+    color: #bdbdbd;
+    transition-duration: 0.2s;
+}
+
+.txthover-leave {
+    color: #63825e;
+    transition-duration: 0.2s;
+}
+
+/* 버튼 호버 (색깔) */
+.btnhover {
+    background-color: #53724f;
+    transition-duration: 0.2s;
+}
+
+.btnhover-leave {
+    background-color: #63825e;
+    transition-duration: 0.2s;
+}
