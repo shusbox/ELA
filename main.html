@@ -6,9 +6,9 @@
     <title>독거노인클럽</title>
 
     <link rel="icon" href="/resource/icon.png"/>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/animation.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
@@ -23,26 +23,7 @@
 <body>
     <div class="container">
         <header>
-            <nav id="nav">
-                <div class="nav-top">
-                    <div class="logo">
-                        <img src="/resource/home.png" width="40px">
-                        <h1 style="margin: 0;"> ELA CLUB </h1>
-                    </div>
-                    
-                    <div class="auth-buttons">
-                        <button id="signup" class="signup-btn" onclick="window.open('html/login.html')"> 회원가입 </button>
-                        <button id="login" class="login-btn" onclick="window.open('html/login.html')"> 로그인 </button>
-                    </div>
-                </div>
-
-                <div class="nav-bottom underline">
-                    <ul class="nav-menu">
-                        <li class="underline"> 멤버 </li>
-                        <li class="underline"> 노래 </li>
-                    </ul>
-                </div>
-            </nav>
+            <div id="nav"></div>
         </header>
 
         <main>
@@ -57,7 +38,7 @@
                     </div>
         
                     <div class="btn">
-                        <button id="joinbtn" class="joinbtn" onclick="location.href='html/test.html'"> 가입하기 -> </button>
+                        <button id="joinbtn" class="joinbtn" onclick="location.href='/html/test.html'"> 가입하기 -> </button>
                         <button id="memberbtn" class="memberbtn"> 멤버 확인하기 </button>
                     </div>
                 </div>
@@ -66,5 +47,16 @@
     </div>
 
     <script src="scripts/main.js"></script>
+    <script>
+        fetch("/html/nav.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("nav").innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = "/scripts/main.js";
+                document.body.appendChild(script);
+            });
+    </script>
 </body>
 </html>

@@ -8,11 +8,11 @@ function txthover(id) {
     });
 
     el.addEventListener('mouseleave', () => {
-        el.classList.remove('signuphover');
-        el.classList.add('signuphover-leave');
+        el.classList.remove('txthover');
+        el.classList.add('txthover-leave');
 
         setTimeout(() => {
-            el.classList.remove('signuphover-leave');
+            el.classList.remove('txthover-leave');
         }, 200);
     });
 }
