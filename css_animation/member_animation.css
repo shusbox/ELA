@@ -4,6 +4,8 @@
 
 .profile-hover {
     transform: scale(1.05);
+    border: none;
+    box-shadow: 0px 0px 9px #23325622;
 }
 
 .profile-hover-leave {

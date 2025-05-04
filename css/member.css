@@ -35,7 +35,7 @@
 
 .line {
     margin: 20px 0px;
-    width: 1300px;
+    width: 1000px;
     height: 3px;
     border: none;
     background-color: #ECECEC;
@@ -51,7 +51,7 @@
 }
 
 .member-title {
-    margin: 30px 0px 0px;
+    margin: 140px 0px 0px;
     padding: 10px 18px;
     color: white;
     font-family: "Lexend Deca";
@@ -73,6 +73,18 @@
     font-weight: 300;
 }
 
+.profile-margin {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crown {
+    position: absolute;
+    top: -50px;
+}
+
 /* 프로필 */
 .member-profile {
     display: flex;
@@ -80,14 +92,14 @@
 }
 
 .profile {
-    margin: 50px 25px;
+    margin: 15px 25px;
     padding: 25px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
     background-color: white;
-    box-shadow: 0px 0px 8px #cdcdcd;
+    box-shadow: 0px 0px 0px 3px #ECECEC;
 }
 
 hr {
@@ -114,4 +126,38 @@ hr {
     margin: 5px 0px;
     font-size: 30px;
     font-weight: 300;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 말풍선 */
+.speechbubble {
+    display: none;
+    position: absolute;
+    top: -48px;
+    background: white;
+    color: black;
+    padding: 13px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0px 9px #23325622;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 10;
+}
+
+.speechbubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
 }

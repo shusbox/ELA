@@ -3,51 +3,12 @@
     font-family: 'Pretendard', sans-serif;
 }
 
-.main {
-    margin: 124px 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.txt {
+.btn {
+    margin: 150px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.main hr {
-    margin: 100px 50px 0px 150px;
-    width: 8px;
-    height: 400px;
-    background-color: #63825e;
-}
-
-.title {
-    cursor: default;
-    margin: 110px 0px;
-}
-
-.title p {
-    margin: 8px 0px;
-    color: #979797;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.title h1 {
-    margin: 8px 0px;
-    font-size: 85px;
-    font-weight: 750;
-}
-
-.boldtxt {
-    color: #63825e;
-}
-
-.btn {
-    margin: 120px 0px;
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
 .joinbtn {

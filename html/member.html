@@ -20,7 +20,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-        html, body {
+        html {
             margin: 0;
             padding: 0;
         }
@@ -28,18 +28,13 @@
 </head>
 <body>
     <div id="container">
-        <header id="nav"></header>
+        <header>
+            <div id="nav"></div>
+        </header>
 
         <main id="main">
-            <div class="main-description">
-                <h1> Who's The <br> ELA Club Member? </h1>
-                <div class="scroll">
-                    <p> Going Scroll! </p>
-                    <img src="resource/down-arrow.png" width="30px">
-                </div>
-            </div>
-
             <div class="member">
+                <!-- 대빵라인 -->
                 <h1 class="member-title"> Member </h1>
                 <div>
                     <h2 class="title"> 대빵 </h2>
@@ -50,60 +45,114 @@
                     </p>
                 </div>
                 
-                <div class="member-profile">
-                    <div class="profile">
-                        <img src="resource/profile/1.png" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 크루장 </p>
-                        <h1 class="name"> 백현우 </h1>
-                    </div>
-                    <div class="profile">
-                        <img src="resource/profile/윤상휘.png" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 회장 </p>
-                        <h1 class="name"> 윤상휘 </h1>
+                <div class="profile-margin">
+                    <div class="member-profile">
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ...</div>
+                            <div class="profile">
+                                <img src="resource/profile/1.png" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루장 </p>
+                                <h1 class="name"> 백현우 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ... </div>
+                            <div class="profile">
+                                <img src="resource/king.png" width="50px" class="crown">
+                                <img src="resource/profile/윤상휘.png" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 회장 </p>
+                                <h1 class="name"> 윤상휘 </h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <hr class="line">
 
+                <!-- 노예라인 -->
                 <div>
-                    <h2 class="title"> 1기 크루원 </h2>
-                    <p class="description"> 명예력 지리는 1기 크루원입니다🤯 </p>
+                    <h2 class="title"> 명예 크루원 </h2>
+                    <p class="description"> 명예력 지리는 크루원들입니다🤯 </p>
                 </div>
 
-                <div class="member-profile">
-                    <div class="profile">
-                        <img src="resource/profile/손하랑.JPG" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 인턴 </p>
-                        <h1 class="name"> 손하랑 </h1>
+                <div class="profile-margin">
+                    <div class="member-profile">
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ... </div>
+                            <div class="profile">
+                                <img src="resource/profile/손하랑.JPG" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 인턴 </p>
+                                <h1 class="name"> 손하랑 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble">
+                                기억나우리처음만난날내게오던너의그미소가마치날알고있던것처럼매일스쳐지나가던바람처럼
+                            </div>
+                            <div class="profile">
+                                <img src="resource/profile/진수화.jpg" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 진수화 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ... </div>
+                            <div class="profile">
+                                <img src="resource/profile/김성주.JPG" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 김성주 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ... </div>
+                            <div class="profile">
+                                <img src="resource/profile/김채린.JPG" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 김채린 </h1>
+                            </div>
+                        </div>
                     </div>
-                    <div class="profile">
-                        <img src="resource/profile/진수화.jpg" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 크루원 </p>
-                        <h1 class="name"> 진수화 </h1>
-                    </div>
-                    <div class="profile">
-                        <img src="resource/profile/김성주.JPG" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 크루원 </p>
-                        <h1 class="name"> 김성주 </h1>
-                    </div>
-                    <div class="profile">
-                        <img src="resource/profile/김채린.JPG" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 크루원 </p>
-                        <h1 class="name"> 김채린 </h1>
-                    </div>
-                </div>
-                <div class="member-profile">
-                    <div class="profile">
-                        <img src="resource/profile/문성민.JPG" width="130px" style="border-radius: 100px;">
-                        <hr>
-                        <p class="spot"> 크루원 </p>
-                        <h1 class="name"> 문성민 </h1>
+
+                    <div class="member-profile">
+                        <div class="profile-container">
+                            <div class="speechbubble" style="color: #CECECE;"> ... </div>
+                            <div class="profile">
+                                <img src="resource/profile/문성민.JPG" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 문성민 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble"> 곧 독거노인 탈출 </div>
+                            <div class="profile">
+                                <img src="resource/profile/윤성하.png" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 윤성하 </h1>
+                            </div>
+                        </div>
+
+                        <div class="profile-container">
+                            <div class="speechbubble"> 인생쓰다 </div>
+                            <div class="profile">
+                                <img src="resource/profile/장승한.png" width="130px" style="border-radius: 100px;">
+                                <hr>
+                                <p class="spot"> 크루원 </p>
+                                <h1 class="name"> 장승한 </h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
