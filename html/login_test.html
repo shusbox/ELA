@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" href="../resource/icon.png"/>
+    <link rel="stylesheet" href="../css/login_test.css">
+    <link rel="stylesheet" href="../css_animation/hover_animation.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #F7F7F7;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="/resource/close.png" class="close" width="20px">
+            <div class="notice">
+                <img src="../resource/notice.png" width="25px">
+                <p>
+                    현재 로그인 기능은 사용이 불가합니다.
+                    <br>
+                    왜냐하면내가백엔드할줄몰라서...
+                </p>
+            </div>
+        </div>
+
+        <div class="Background">
+            <div class="Login">
+                <div class="Logo" onclick="location.href='/index.html'">
+                    <img src="/resource/home.png" width="55px">
+                    <h1> ELA CLUB </h1>
+                </div>
+    
+                <form>
+                    <div class="Login-input">
+                        <input type="text" placeholder="username" required>
+                        <input type="password" placeholder="password" required>
+                        <label> <input type="checkbox"> <p> Remember me </p> </label>
+                    </div>
+                    
+                    <div class="auth-btn">
+                        <button type="submit"> Login </button>
+                        <a href="/html/test.html"> sign up </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script src="../scripts/login.js"></script>
+</body>
+</html>
