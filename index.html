@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ELA CLUB </title>
 
-    <!-- <base href="https://shusbox.github.io/ELA/"> -->
+    <base href="https://shusbox.github.io/ELA/">
 
-    <link rel="icon" href="/resource/icon.png"/>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css_animation/main_animation.css">
+    <link rel="icon" href="resource/icon.png"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css_animation/main_animation.css">
 
     <!-- nav css -->
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css_animation/hover_animation.css">
-    <link rel="stylesheet" href="/css_animation/nav_animation.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css_animation/hover_animation.css">
+    <link rel="stylesheet" href="css_animation/nav_animation.css">
 
     <!-- footer css -->
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <style>
         /* Lexend Deca */ @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
@@ -38,8 +38,8 @@
 
         <main>
             <div class="btn">
-                <button id="joinbtn" class="joinbtn" onclick="location.href='/html/fix.html'"> 가입하기 -> </button>
-                <button id="memberbtn" class="memberbtn" onclick="location.href='/html/member.html'"> 멤버 확인하기 </button>
+                <button id="joinbtn" class="joinbtn" onclick="location.href='html/fix.html'"> 가입하기 -> </button>
+                <button id="memberbtn" class="memberbtn" onclick="location.href='html/member.html'"> 멤버 확인하기 </button>
             </div>
         </main>
 
@@ -65,14 +65,14 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             // nav
-            loadHTML("nav", "/html/nav.html", "/scripts/nav.js");
+            loadHTML("nav", "/html/nav.html", "scripts/nav.js");
 
             // footer
-            loadHTML("footer", "/html/footer.html", "/scripts/footer.js");
+            loadHTML("footer", "/html/footer.html", "scripts/footer.js");
 
             // js
             const mainScript = document.createElement("script");
-            mainScript.src = "/scripts/main.js";
+            mainScript.src = "scripts/main.js";
             document.body.appendChild(mainScript);
         });
     </script>
