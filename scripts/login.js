@@ -1,4 +1,4 @@
-// 텍스트 호버 애니메이션 (색깔 어둡게)
+// 텍스트 호버 애니메이션
 function txthover(id) {
     const el = document.getElementById(id);
     
@@ -17,7 +17,7 @@ function txthover(id) {
     });
 }
 
-// 버튼 호버 애니메이션 (색깔 어둡게)
+// 버튼 호버 애니메이션
 function btnhover(id) {
     const el = document.getElementById(id);
 
@@ -36,5 +36,21 @@ function btnhover(id) {
     });
 }
 
-txthover('signup')
-btnhover('login')
+function close(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.addEventListener('click', () => {
+        const notice = el.parentElement.querySelector('.notice');
+        if (notice) {
+            notice.classList.add('notice-close');
+        }
+        el.style.display = "none";
+    })
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    txthover('signup');
+    btnhover('login');
+    close('close');
+});
