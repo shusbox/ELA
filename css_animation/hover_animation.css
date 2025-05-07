@@ -19,3 +19,14 @@
     background-color: #63825e;
     transition-duration: 0.2s;
 }
+
+/* 호버 (사이즈업) */
+.sizeup-hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.sizeup-hover-leave {
+    transform: scale(1);
+    transition: 0.2s;
+}

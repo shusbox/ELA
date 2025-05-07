@@ -27,8 +27,11 @@
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.logo h1 {
     font-family: "Lexend Deca";
-    font-size: 24px;
+    font-size: 38px;
     color: #63825e;
 }
 
@@ -67,7 +70,7 @@
 }
 
 .nav-menu li {
-    position: relative; /* 가상 요소 위치 기준 */
+    position: relative;
     margin: 15px 25px;
     padding: 15px 25px;
     color: #A6A6A6;
